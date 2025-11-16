@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Polar Expres</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo" id="logo">The Polar Express</div>
+      <ul class="menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#datos">Presentación</a></li>
+        <li><a href="#personajes">Personajes</a></li>
+        <li><a href="#premios">Premios</a></li>
+        <li><a href="#multimedia">Multimedia</a></li>
+        <li><a href="#lista">Cines</a></li>
+        <li><a href="#form">Opinión</a></li>
+      </ul>
+      <button id="modoBtn" class="modo-btn">🌙</button>
+    </div>
+  </nav>
+
+  <header id="inicio" class="hero">
+    <div class="hero-content">
+      <h1>El Polar Express</h1>
+      <h3>Un viaje mágico al Polo Norte</h3>
+      <p>
+        Una película de animación navideña dirigida por Robert Zemeckis que nos transporta en un viaje inolvidable lleno
+        de magia, fe y el verdadero espíritu de la Navidad.
+      </p>
+    </div>
+  </header>
+
+  <div>
+    <section id="datos" class="datos-generales">
+      <h2>Datos Generales</h2>
+      <div class="info-grid">
+        <div class="card datos-card">
+          <h3>Datos Generales</h3>
+          <ul>
+            <li><strong>Director:</strong> Robert Zemeckis</li>
+            <li><strong>Año:</strong> 2004</li>
+            <li><strong>Duración:</strong> 100 minutos</li>
+            <li><strong>Género:</strong> Animación, Aventura, Familia</li>
+            <li><strong>Clasificación:</strong> G (Apta para todos los públicos)</li>
+            <li><strong>Estudio:</strong> Warner Bros. Pictures</li>
+            <li><strong>País:</strong> Estados Unidos</li>
+          </ul>
+        </div>
+
+        <div class="card sinopsis-card">
+          <h3>Sinopsis</h3>
+          <p>
+            En la víspera de Navidad, un niño escéptico sobre la existencia de Santa Claus aborda un tren mágico llamado
+            <b>"The Polar Express"</b> que se dirige al Polo Norte. Durante este extraordinario viaje, conoce a otros
+            niños
+            y vive aventuras que fortalecen su fe en la magia de la Navidad. Basada en el libro de Chris Van Allsburg,
+            la
+            película combina tecnología de captura de movimiento para ofrecer una experiencia visual única y emotiva.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="premios" class="tabla-premios">
+      <h2>Premios y Reconocimientos</h2>
+      <table border="1" cellspacing="0" cellpadding="8">
+        <thead>
+          <tr>
+            <th>Categoría</th>
+            <th colspan="2">Resultado</th>
+          </tr>
+          <tr>
+            <th></th>
+            <th>Nominación</th>
+            <th>Premio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Oscar – Mejor Sonido</td>
+            <td>✓</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Oscar – Mejor Banda Sonora</td>
+            <td>✓</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Grammy – Mejor Canción (“Believe”)</td>
+            <td>✓</td>
+            <td>✓</td>
+          </tr>
+          <tr>
+            <td>Saturn Award – Mejor Película Animada</td>
+            <td>✓</td>
+            <td>✓</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="personajes" class="personajes">
+      <h2>Personajes de <em>Polar express</em></h2>
+      <ul>
+        <li>
+          <img
+            src="https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/conductor_4.png"
+            alt="Conductor">
+          <strong>Conductor:</strong> Invita a los niños a abordar el tren y los supervisa durante el viaje.
+          Interpretado por <em>Tom Hanks</em>.
+        </li>
+        <li>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnIitnYe4032hOu9khTcRuiHPjNOTreut6h0Pg9nAhBimdVr1FJSzbl4oERmImRG9KEw8&usqp=CAU"
+            alt="Niño Héroe">
+          <strong>Niño Héroe(Alias:Chris):</strong> Niño que duda de la existencia de Papá Noel.
+          Interpretado mediante captura de movimiento por <em>Tom Hanks</em> y <em>Josh Hutcherson</em>,
+          con voz de <em>Daryl Sabara</em>.
+        </li>
+        <li>
+          <img src="https://m.media-amazon.com/images/M/MV5BMTgzOTI2OTgxOF5BMl5BanBnXkFtZTcwNjUzNjgyMw@@._V1_.jpg"
+            alt="Niña Heroína">
+          <strong>Niña Heroína:</strong> Amiga del Niño Héroe durante el viaje.
+          Interpretada por <em>Chantel Valdivieso</em> (movimiento) y <em>Nona Gaye</em> (voz).
+        </li>
+      </ul>
+    </section>
+
+    <section id="multimedia" class="multimedia">
+      <h2>Multimedia</h2>
+      <iframe id="Trailer" width="800" height=400"
+        src="https://www.youtube.com/embed/TQhRqtt-Fpo?autoplay=1&mute=1&controls=0"
+        title="The Polar Express (2004) Official Trailer - Tom Hanks, Robert Zemeckis Movie HD" frameborder="0"
+        allow="accelerometer; autoplay; mute; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="images">
+        <img
+          src="https://occ-0-8407-2219.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVo_q8ocqJuaKoxTE9MIhTocsL_sfoX0PPxLQcAFo0XxDXRw6-hOgEjnWq3X0ASrUPJROKanUOsujFrtUs6C7flYX6FWzwbFFtAh.jpg?r=7be"
+          alt="Image 1">
+        <img
+          src="https://imagenes.elpais.com/resizer/v2/U6BE7RZCP6XAYODTV25CE3E7H4.jpg?auth=a516a2553ec4470fa859d72c1667a2a10e06ca4864543dc90ecb21ac0057bd64&width=1960"
+          alt="Image 2">
+      </div>
+    </section>
+    <section id="lista" class="cine">
+      <h1>Cines donde ver la pelicula</h1>
+      <dl>
+        <dt>Barcelona</dt>
+        <dd>-Cinemes girona - Carrer de Girona, 175 </dd>
+        <dd>-Phenomena Experience - Passeig de Gràcia, 102 </dd>
+        <dd>-Bosques multicines - diagonal, 555 </dd>
+        <dt>Madrid</dt>
+        <dd>-Cines Callao - Plaza del Callao, 3</dd>
+        <dd>-Capitol gran via - Gran via, 41</dd>
+        <dd>-Cinesa Proyecciones - Calle Fuencarral, 136</dd>
+        <dt>Valencia</dt>
+        <dd>-Cines babel - Calle Vicente sancho tello, 10</dd>
+        <dd>-Kinepolis Valencia -Carrer d Eduardo primo Yufera, 1A</dd>
+        <dd>-Lys Platja Patacona - Av. del Mare Nostrum, 13</dd>
+      </dl>
+    </section>
+
+    <section class="links-interes">
+      <h2>Enlaces de Interés</h2>
+      <div class="links-grid">
+        <div class="link-card">
+          <h3>IMDb <span>🔗</span></h3>
+          <p>Base de datos de películas<br>
+            Información completa, críticas y valoraciones de usuarios.</p>
+          <a href="https://www.imdb.com/es-es/title/tt0338348/" target="_blank" class="link-btn">Visitar IMDb →</a>
+        </div>
+
+        <div class="link-card">
+          <h3>Wikipedia <span>🔗</span></h3>
+          <p>Enciclopedia libre<br>
+            Historia de producción, recepción crítica y detalles técnicos.</p>
+          <a href="https://es.wikipedia.org/wiki/The_Polar_Express" target="_blank" class="link-btn">Visitar Wikipedia
+            →</a>
+        </div>
+
+        <div class="link-card">
+          <h3>Rotten Tomatoes <span>🔗</span></h3>
+          <p>Críticas y reseñas<br>
+            Puntuación de críticos y audiencia, junto con reseñas destacadas.</p>
+          <a href="https://www.rottentomatoes.com/m/polar_express" target="_blank" class="link-btn">Visitar Rotten
+            Tomatoes →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="form" class="opinion">
+      <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
+        <fieldset>
+          <legend>Opinion </legend>
+
+          <label for="nombre">Nombre:</label><br>
+          <input type="text" id="nombre" name="nombre" maxlength="30" required><br><br>
+
+          <label for="apellidos">Apellidos:</label><br>
+          <input type="text" id="apellidos" name="apellidos" maxlength="50" required><br><br>
+          <label for="fecha">Fecha de nacimiento:</label><br>
+          <input type="date" id="fecha" name="fecha" required><br><br>
+          <label for="mail">Correo electrónico:</label><br>
+          <input type="email" id="mail" name="mail" placeholder="exemple@exemple.com" required><br><br>
+
+          <label> Valoración:
+            <select>
+              <option>⭐️⭐️⭐️⭐️⭐️</option>
+              <option>⭐️⭐️⭐️⭐️</option>
+              <option>⭐️⭐️⭐️</option>
+              <option>⭐️⭐️</option>
+              <option>⭐️</option>
+            </select>
+          </label>
+          <br>
+
+          <label for="comentario">Comentario:</label><br>
+          <textarea id="comentario" name="comentario" rows="10" cols="50"></textarea><br><br>
+
+          <input type="reset" value="Borrar todo">
+          <input type="submit" value="Enviar formulario">
+        </fieldset>
+      </form>
+    </section>
+
+
+    <script>
+      gsap.from(".logo", {duration: 1, opacity: 0, x: -100, ease: "power2.out"});
+      gsap.from(".menu li", {duration: 1, opacity: 0, x: 50, stagger: 0.1});
+      gsap.from(".hero-content h1", {duration: 2, opacity: 0, y: -30});
+      gsap.from(".hero-content p", {duration: 2, opacity: 0, y: 30, delay: 0.5});
+
+      const modoBtn = document.getElementById("modoBtn");
+      modoBtn.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+        modoBtn.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
+      });
+    </script>
+</body>
+
+</html>
